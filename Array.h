@@ -36,6 +36,9 @@ public:
 
 	Array operator=(const Array&other);
 
+	char operator [](int index);
+	void operator ()(int number);
+
 	operator long();
 
 	operator char* ();

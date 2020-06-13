@@ -21,11 +21,15 @@ int main()
 	myArr.Print();
 	myArr++;
 	myArr.Print();
+	myArr.operator()(3);
+	myArr.Print();
+	myArr.operator[](2);
+
 
 
 	//myArr--;
 
-	Array myArr2 = 7;
+	/*Array myArr2 = 7;
 	myArr2.Filling_Rand();
 	myArr2.Print();
 
@@ -33,7 +37,7 @@ int main()
 	myArr.Print();
 
 	myArr.operator long();
-	myArr.Print();
+	myArr.Print();*/
 
 
 

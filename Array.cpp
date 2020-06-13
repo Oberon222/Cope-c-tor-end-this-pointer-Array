@@ -117,8 +117,6 @@ Array Array::operator++()
 Array Array::operator++(int)
 {
 	Array tmp = *this;
-		
-
 		for (int i = 0; i < this->size; i++) {
 			this->arr[i]++;
 		}
@@ -136,10 +134,7 @@ Array Array::operator--()
 
 Array Array::operator--(int)
 {
-
 	Array tmp = *this;
-	
-
 	for (int i = 0; i < this->size; i++) {
 		this->arr[i]--;
 	}
@@ -165,6 +160,23 @@ Array Array::operator=(const Array& other)
 		
 	return Array(*this);
 }
+
+char Array::operator[](int index)
+{
+	if (index >= 0 && index < size) 
+	
+	return arr[index];
+}
+
+void Array::operator()(int number)
+{
+	if (number > 0) {
+		for (int i = 0; i < size; i++) {
+			arr[i] += number;
+		}
+	}
+}
+
 
 Array::operator long()
 {
